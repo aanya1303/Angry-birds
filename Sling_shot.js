@@ -39,5 +39,8 @@ display(){
 detached(){
     this.chain.bodyA=null;
 }
+attach(body){
+   this.chain.bodyA=body;
+}
 }
 

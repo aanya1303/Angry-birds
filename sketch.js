@@ -28,7 +28,7 @@ function setup(){
     box2=new Box(1000,760,50,50);
     bird=new Bird(205,230,50,50);
     pig1=new Pig(900,760);
-    ground2=new Ground(200,600,400,400);
+    ground2=new Ground(150,600,300,400);
     box3=new Box(800,700,50,50);
     box4=new Box(1000,700,50,50);
     pig2=new Pig(900,700);
@@ -67,4 +67,9 @@ function draw(){
     stick3.display(); 
     box5.display()
     stick4.display()
+}
+function keyPressed(){
+    if (keyCode===32){
+        chain.attach(bird.body);
+    }
 }
