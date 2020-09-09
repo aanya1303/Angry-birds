@@ -19,7 +19,7 @@ class Pig extends BaseClass{
         }
     }
 
-
+    
  score(){
 
     if( this.visible < 0 && this.visible > -1005){

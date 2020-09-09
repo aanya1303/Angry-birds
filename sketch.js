@@ -16,7 +16,6 @@ var backgroundImg;
 var score = 0;
 function preload(){
     getBackgroundImg();
-    score();
 }
 function setup(){
     var canvas = createCanvas(1200,800);
@@ -33,7 +32,7 @@ function setup(){
     box4=new Box(1000,700,50,50);
     pig2=new Pig(900,700);
     
-    
+
    stick1=new Stick(900,730,300,PI/2);
    stick2=new Stick(900,670,300,PI/2);
 
@@ -73,8 +72,9 @@ function draw(){
     stick2.display();
     ground2.display();
     stick3.display(); 
-    box5.display()
-    stick4.display()
+    box5.display();
+    stick4.display();
+    pig1.score();
 }
 function keyPressed(){
     if (keyCode===32){
