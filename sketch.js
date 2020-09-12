@@ -58,6 +58,11 @@ function draw(){
 
     //console.log(box2.body.angle)
     pig2.score();
+    box1.score();
+    box2.score();
+    box3.score();
+    box4.score();
+    box5.score();
     ground.display();
     bird.display();
     box1.display();
