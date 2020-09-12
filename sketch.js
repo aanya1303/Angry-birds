@@ -57,7 +57,7 @@ function draw(){
     Engine.update(engine);
 
     //console.log(box2.body.angle)
-    
+    pig2.score();
     ground.display();
     bird.display();
     box1.display();
@@ -87,7 +87,7 @@ function keyPressed(){
 
 async function getBackgroundImg(){
     var location ="Asia/Tokyo"
-    var response = await fetch("https://worldtimeapi.org/api/timezone/"+location);
+    var response = await fetch("http://worldtimeapi.org/api/timezone/"+location);
     var responseJSON = await response.json();
 
     var datetime = responseJSON.datetime;
